@@ -1,3 +1,6 @@
+variable "environment" {
+  type = string
+}
 variable "vpc_name" {
   type = string
   default = null

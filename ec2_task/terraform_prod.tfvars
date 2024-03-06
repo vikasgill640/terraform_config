@@ -1,3 +1,4 @@
+environment = "prod"
 tags={
     environment = "prod"
     region      = "us-east-1"

@@ -5,7 +5,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket         = "test-teraformstate-bucket1"
-    key            = "vpc/terraform.tfstate"
+    key            = "${var.environment}/vpc/terraform.tfstate"
     region         = "us-east-1"
     dynamodb_table = "teraform_lockId"
     encrypt        = true
